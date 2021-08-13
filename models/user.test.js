@@ -265,7 +265,7 @@ describe("deleteFavorite", function () {
   test("works", async function () {
     await User.deleteFavorite("u1", testFavIds[0]);
     const res = await db.query(
-      "SELECT recipe_id FROM favorites WHERE recipe_id=$1", [testFavId]);
+      "SELECT recipe_id FROM favorites WHERE recipe_id=$1", [testFavId[0]]);
     expect(res.rows.length).toEqual(0);
   });
 

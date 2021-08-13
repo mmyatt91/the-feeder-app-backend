@@ -4,7 +4,7 @@ const db = require("../db.js");
 const User = require("../models/user");
 const { createToken } = require("../helpers/tokens");
 
-let testFavId = ""
+const testFavId = "123"
 const u1Token = createToken({ username: "u1", isAdmin: false });
 const u2Token = createToken({ username: "u2", isAdmin: false });
 const adminToken = createToken({ username: "admin", isAdmin: true });
@@ -43,8 +43,6 @@ async function commonBeforeAll() {
     isAdmin: false
   });
 
-  testFavId = "123"
-
   await User.makeFavorite("u1", testFavId);
 
 }
@@ -69,5 +67,6 @@ module.exports = {
   commonAfterAll,
   u1Token,
   u2Token,
-  adminToken
+  adminToken,
+  testFavId
 }
