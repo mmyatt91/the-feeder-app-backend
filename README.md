@@ -52,3 +52,7 @@ Start Backend from Terminal
 ### `npm start`
 
 Open [http://localhost:4000](http://localhost:4000) to view it in the browser.
+
+Test Backend
+### `jest`
+### `supertest`
