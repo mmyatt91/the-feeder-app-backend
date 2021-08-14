@@ -2,7 +2,7 @@
 
 A Recipe Directory Built from the Edaman Recipe Search API 
 
-See App on Heroku: https://feeder-app-backend.herokuapp.com/
+See App on Heroku: https://feeder-backend-app.herokuapp.com/
 
 ## Overview: 
 A web application that allows users to search for recipes based on ingredients, diet types, health restrictions, and more. 
